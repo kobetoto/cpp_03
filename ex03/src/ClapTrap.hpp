@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ClapTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thodavid <thodavid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kobe <kobe@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/11/28 14:15:00 by kobe              #+#    #+#             */
-/*   Updated: 2025/12/08 13:46:46 by thodavid         ###   ########.fr       */
+/*   Updated: 2025/12/10 15:57:29 by kobe             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,7 @@ public:
     unsigned int getEnrgyPts(void);
     unsigned int getAttckDama(void);
 
-    virtual void    attack(const std::string &target);
+    void    attack(const std::string &target);
     void            takeDamage(unsigned int amount);
     void            beRepaired(unsigned int amount);
 

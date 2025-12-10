@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   ScavTrap.hpp                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: thodavid <thodavid@student.42.fr>          +#+  +:+       +#+        */
+/*   By: kobe <kobe@student.42.fr>                  +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2025/12/07 12:44:31 by thodavid          #+#    #+#             */
-/*   Updated: 2025/12/09 09:09:19 by thodavid         ###   ########.fr       */
+/*   Updated: 2025/12/10 15:57:13 by kobe             ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,14 +17,14 @@
 #include <string>
 #include "ClapTrap.hpp"
 
-class ScavTrap: public ClapTrap
+class ScavTrap: virtual public ClapTrap
 {
 public:
     ScavTrap(void);
     ScavTrap(std::string name);
     ScavTrap(ScavTrap const &src);
     ScavTrap &operator=(ScavTrap const &rightHandSide);
-    ~ScavTrap(void);
+    virtual ~ScavTrap(void);
 
     void    guardGate();
     void    attack(const std::string &target);
